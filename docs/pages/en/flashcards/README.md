@@ -20,14 +20,12 @@ and links with my learning materials. We'll see.
 
 ## Template
 
-```
+```html
 <details>
-<summary>Question?</summary>
-<p>
-
-Answer!
-
-</p>
+  <summary>Question?</summary>
+  <p>
+    Answer!
+  </p>
 </details>
 ```
 

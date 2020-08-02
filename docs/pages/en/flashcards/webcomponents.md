@@ -43,7 +43,7 @@ You can now use your custom element wherever you like on your page, just like yo
 <p>
 
 ```javascript
-CustomElementRegistry.define()
+CustomElementRegistry.define();
 ```
 
 Passing it:
@@ -60,7 +60,7 @@ Passing it:
 <p>
 
 ```javascript
-Element.attachShadow()
+Element.attachShadow();
 ```
 
 </p>
@@ -71,7 +71,7 @@ Element.attachShadow()
 > **references**
 >
 > - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
->  by [Mozilla Contributors](https://developer.mozilla.org/en-US/docs/Web/Web_Components$history)
+>   by [Mozilla Contributors](https://developer.mozilla.org/en-US/docs/Web/Web_Components$history)
 
 ## Custom Elements
 
@@ -107,7 +107,7 @@ browsers](https://caniuse.com/#feat=custom-elementsv1).
 <p>
 
 ```javascript
-Window.customElements
+Window.customElements;
 ```
 
 </p>
@@ -204,12 +204,17 @@ This is specific to CE and required by the spec.
 <summary>What are the 3 rules your have to follow when defining a CE?</summary>
 <p>
 
-1. The name of a custom element **must contain a dash** (-). 
+(@rules) The name of a custom element **must contain a dash** (-).
+
 > So `<x-tags>`, `<my-element>`, and `<my-awesome-app>` are all valid names, while `<tabs>` and `<foo_bar>` are not.
 > This requirement is so the HTML parser can distinguish custom elements from regular elements. It also ensures forward compatibility when new tags are added to HTML.
-2. You can't register the same tag more than **once**.
+
+(@rules) You can't register the same tag more than **once**.
+
 > Attempting to do so will throw a DOMException.
-3. Custom elements cannot be **self-closing**.
+
+(@rules) Custom elements cannot be **self-closing**.
+
 > This is because HTML only allows a few elements to be self-closing. Always write a closing tag (<app-drawer></app-drawer>).
 
 </p>
@@ -235,13 +240,13 @@ in order to define a placeholder:
 
 ```javascript
 customElements.define(
-  'my-element',
+  "my-element",
   class extends HTMLElement {
     constructor() {
       super();
 
-      const shadow = this.attachShadow({ mode: 'open' });
-      const container = document.createElement('div');
+      const shadow = this.attachShadow({ mode: "open" });
+      const container = document.createElement("div");
 
       container.innerHTML = `
         <slot name="title"></slot>
@@ -279,6 +284,8 @@ The **experimental** [`::part`](https://developer.mozilla.org/en-US/docs/Web/CSS
 select an element within a shadow tree that has a matching `part` attribute.
 
 Here is an example:
+
+<!-- markdownlint-disable no-emphasis-as-heading -->
 
 **light tree**
 
@@ -327,5 +334,5 @@ Creative Commons Attribution-ShareAlike 4.0 International License
 
 <!-- references -->
 
-  [by4]: https://creativecommons.org/licenses/by/4.0/
-  [bysa25]: http://creativecommons.org/licenses/by-sa/2.5/
+[by4]: https://creativecommons.org/licenses/by/4.0/
+[bysa25]: http://creativecommons.org/licenses/by-sa/2.5/
