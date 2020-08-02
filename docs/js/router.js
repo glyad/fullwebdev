@@ -1,4 +1,4 @@
-import { html, render } from "lit-html";
+import { render } from "lit-html";
 
 const langBase = /\/(en|fr)/;
 
