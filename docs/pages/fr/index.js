@@ -7,4 +7,5 @@ export default () =>
     actionText: "Allons-y !",
     features: [],
     footer: "Copyright © 2020 Noël Macé",
+    tagline: "Une approche transversale du développement Web",
   });

@@ -4,5 +4,6 @@ Cette section rassemble, en vrac, divers éléments (code, illustrations, etc.) 
 
 Elles ne sont pas destinées à vous fournir un contenu d'apprentissage suffisant sans l'aide de ces autres contenus.
 
-> :construction:
-> Ces pages sont en cours de constructions, et devraient le rester pour encore plusieurs mois.
+::: warning
+Ces pages sont en cours de constructions, et devraient le rester pour encore plusieurs mois.
+:::

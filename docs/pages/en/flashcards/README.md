@@ -16,7 +16,7 @@ and links with my learning materials. We'll see.
 
 ## Topics
 
-- [Web Components](webcomponents.md)
+- [Web Components](/webcomponents/)
 
 ## Template
 

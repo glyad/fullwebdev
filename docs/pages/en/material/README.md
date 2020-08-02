@@ -4,8 +4,9 @@ This section collects in sparse order various elements (code samples, illustrati
 
 They are not intended to provide you with sufficient information without the help of these more structured and complete materials.
 
-> :construction:
-> This section is under construction and is anticipated to remain that way for several months.
->
-> Most titles and some elements aren't translated from french to english.\
-> Refer to the [french version](/fr/material/) for more up to date content.
+::: warning
+This section is under construction and is anticipated to remain that way for several months.
+
+Most titles and some elements aren't translated from french to english.\
+Refer to the [french version](/fr/material/) for more up to date content.
+:::
