@@ -1,6 +1,6 @@
 import { render } from "lit-html";
-import appShellTemplate from "../components/app-shell.js";
-import { sidebarState } from "./sidebar.js";
+import appShellTemplate from "./global-components/app-shell.js";
+import { sidebarState } from "./sidebar-state.js";
 
 const langBase = /\/(en|fr)\//;
 

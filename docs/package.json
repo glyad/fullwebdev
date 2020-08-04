@@ -3,9 +3,11 @@
   "version": "0.8.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:clean && npm run build:md && rollup -c rollup.config.js",
-    "build:clean": "rimraf dist",
-    "build:md": "node _scripts_/compile-md.js",
+    "build": "npm run build:md && npm run build:rollup",
+    "prebuild:md": "rimraf views",
+    "build:md": "node _scripts_/main.js",
+    "prebuild:rollup": "rimraf dist",
+    "build:rollup": "rollup -c rollup.config.js",
     "start:md": "npm run build:md -- --watch",
     "start": "npm run start:clean && concurrently \"npm:start:md\" \"npm:start:server\"",
     "start:clean": "rimraf ./views",
@@ -28,7 +30,10 @@
     "concurrently": "^5.2.0",
     "es-dev-server": "^1.57.1",
     "rimraf": "^2.6.3",
-    "rollup": "^2.3.4"
+    "rollup": "^2.3.4",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-esm-import-to-url": "^2.1.0",
+    "rollup-plugin-multi-input": "^1.1.1"
   },
   "dependencies": {
     "lit-html": "^1.2.1",

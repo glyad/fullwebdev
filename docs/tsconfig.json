@@ -11,5 +11,6 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
     "esModuleInterop": true
-  }
+  },
+  "includes": [ "./**/*.js "]
 }
