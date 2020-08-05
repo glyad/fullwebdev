@@ -1,6 +1,5 @@
 import codesandbox from "../../../js/components/codesandbox.js";
 import pageFooter from "../../../js/components/page-footer.js";
-import { html } from "lit-html";
 
 export default () => html`
   <h1>Code Samples</h1>

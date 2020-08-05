@@ -3,8 +3,6 @@
  * @typedef {{ heroText: string; heroSubText: string; tagline: string; actionText: string; features: Feature[]; footer: string; }} HomeData
  */
 
-import { html } from "lit-html";
-
 class FwdLogo extends HTMLElement {
   constructor() {
     super();

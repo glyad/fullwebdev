@@ -1,4 +1,3 @@
-import { html } from "lit-html";
 import { repeat } from "lit-html/directives/repeat.js";
 import { classMap } from "lit-html/directives/class-map.js";
 import { sidebarState } from "../sidebar";

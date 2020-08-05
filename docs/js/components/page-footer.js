@@ -1,5 +1,3 @@
-import { html } from "lit-html";
-
 /**
  * @param {{ path: string; lang: string; }} data
  */

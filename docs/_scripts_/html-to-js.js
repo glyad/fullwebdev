@@ -100,8 +100,6 @@ function htmlToJs(html, pathToSrcFile, editLink = true) {
     .map((text, i) => (i % 2 === 0 ? text : text.replace(/\$/g, "\\$")))
     .join("\\`");
   return `
-import {html} from "lit-html";
-
 export default () => html\`
   ${cleanHtml}
 

@@ -1,5 +1,3 @@
-import { html } from "lit-html";
-
 /**
  * @param {{ branch: string; path: string; title: string; }} data
  */
